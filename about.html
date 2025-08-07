@@ -6,7 +6,7 @@
     <title>Document</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
      <style>
-        .navbar {
+         .navbar {
     background: rgb(74, 17, 17);
     background-attachment: fixed;
     height: 80px;
@@ -211,84 +211,39 @@
     }
  }
 
-
- .transit__container{
-    padding-left: 10px ;
-    padding-top: 10px;
+ .about{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
  }
 
- .first h4{
-    font-size: 13px;
-    font-weight: bold;
- }
- .first p{
-    font-size: 35px;
+ .about__container{
+    background-color: rgb(179, 142, 49);
+    padding: 10px;
+    border-radius: 6px;
  }
 
- .second h4{
-    font-size: 13px;
-    font-weight: bold;
- }
-
- .second p{
-    font-size: 25px;
-    font-weight: 200;
- }
-  .second p i{
-    color: #fff;
-    margin-left: 7px;
-    background: rgb(74, 17, 17);
-    width: fit-content;
-    border-radius: 100%;
-    padding: 5px;
-    font-size: 20px;
-  }
-
- .third h4{
-    font-size: 13px;
+ .about__container h4{
     font-weight: bold;
  }
 
-.transit__items{
-    margin-top: 15px;
-     border-left: 3px solid brown
+ @media screen and (max-width: 480px){
+    html{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+   
 }
 
-.transit__items ul{
-    line-height: 55px;
-    
-}
 
-
-.transit__items ul li{
-    list-style: none;
-    font-size: 13px;
-    font-weight: bold;
-
-}
-
-.transit__items ul li:hover{
-    width: 200px;
-    background-color: #ddd;
-    border-radius: 50px;
-    padding-left: 10px;
-    transition: 0.3s ease;
-}
-.transit__items .long:hover{
-    width: 400px;
-}
-.pitem {
-    line-height: 5px;
-    padding-left: 30px;
-}
-
-.pitem .slant{
-    font-style: italic;
-}
      </style>
 </head>
 <body>
-      <nav class="navbar">
+     <nav class="navbar">
         <div class="navbar__container col-lg-12 col-md-12">
             <a href="/" id="navbar__logo">ATLANTIC<span>EXPRESS</span></a>
             <div class="navbar__toggle" id="mobile-menu">
@@ -301,7 +256,7 @@
                     <a href="./index0.html" class="navbar__links">HOME</a>
                 </li>
                  <li class="navbar__item">
-                    <a href="./about.html" class="navbar__links">ABOUT</a>
+                    <a href="#about__page" class="navbar__links">ABOUT</a>
                 </li>
                 
                  <li class="navbar__item">
@@ -314,54 +269,44 @@
         </div>
     </nav>
 
-    <div class="transit__container">
-        <div class="transit col-lg-12 col-md-12">
-            <div class="first">
-                <h4>
-                    SCHEDULED DELIVERY DATE
-                </h4>
-                <p>
-                    Pending
-                </p>
-            </div>
 
-            <div class="second">
-                <h4>DELIVERY STATUS</h4>
-                <p>In Transit<i class="fa-solid fa-arrow-right"></i></p>
-            </div>
+    <div class="about" id="about__page container-fluid">
+        <div class="about__container col-lg-12 col-md-12">
+            <h4>COMPANY OVERVIEW</h4>
+           <p>
+            At Atlantic Express, we're a leading logistics company dedicated to
+             providing tailored transportation solutions. Our comprehensive services
+              include ground transportation, air freight, ocean freight, warehousing and 
+              distribution, and supply chain management.
 
+           </p>
+           <h4>
+            OUR STRENGTHS
+           </h4>
+           <p>
+            - Advanced Technology: We utilize Transportation Management Systems (TMS) and Warehouse
+             Management Systems (WMS) to optimize logistics operations.
 
-            <div class="third">
-                <h4>TRACKING ID</h4>
-                <p>56890783976255373837 <i class="fa-solid fa-pencil"></i><i class="fa-regular fa-star"></i></p>
+           </p>
+           <p>
+            - Certifications and Compliance: We're committed to safety, quality,
+             and compliance, holding certifications like ISO 9001:2015 and C-TPAT.
 
-            </div>
+           </p>
+           <p>
+            - Sustainability and Social Responsibility: We prioritize environmental 
+            sustainability, community involvement, and diversity and inclusion.
 
-            <div class="transit__items">
-                <ul>
-                    <li>FROM</li>
-                    <li class="long ">PACKAGE RECIEVED BY ATLANTIC EXPRESS</li>
-                    <li>IN TRANSIT</li>
-                    <li>OUT FOR DELIVERY</li>
-                    <li>TO</li>
-                </ul>
-                <div class="pitem">
-                        <p class="slant">Schedule Delivery Date</p>
-                    <p>Pending</p>
-                    </div>
-            </div>
+           </p>
+           <h4>
+            OUR RECOGNITION
+           </h4>
+           <p>
+            We've earned recognition as a top logistics company, best place to work, and have received safety awards. Our goal is to deliver exceptional logistics
+             services that meet the evolving needs of our customers.
+           </p>
+
         </div>
     </div>
-<script src="https://kit.fontawesome.com/af5051bfc9.js" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/af5051bfc9.js" crossorigin="anonymous"></script>
-      <script>
-        const menu = document.querySelector('#mobile-menu');
-        const menulinks = document.querySelector('.navbar__menu');
-
-        menu.addEventListener('click', function(){
-        menu.classList.toggle('is-active');
-        menulinks.classList.toggle('active');
-});
-      </script>
 </body>
 </html>
