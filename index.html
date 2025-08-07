@@ -168,7 +168,7 @@ body {
              <div class="form   col-lg-7 col-md-12" >
               <form action="" class="username col-lg-7 col-md-12" >
                
-                <input type="name" placeholder="Username" class=" col-lg-5 col-md-12">
+                <input type="name email" placeholder="Username or email" class=" col-lg-5 col-md-12">
             </form>
             <form action="" class="password col-lg-7 col-md-12">
                 
@@ -176,7 +176,6 @@ body {
             </form>
             <button class="login__button "><a href="./index0.html">Log in</a></button>
              <a href="#" class="bottom  col-lg-7 col-md-12">Forgot your username or password?</a>
-             <a href="#" class="bottom  col-lg-7 col-md-12">Set up online access</a>
              <a href="./signup.html" class="bottom  col-lg-7 col-md-12">Open a new account</a>
         </div>
         </div>
@@ -193,6 +192,10 @@ body {
         menu.classList.toggle('is-active');
         menulinks.classList.toggle('active');
 });
+
+ document.querySelector(".login__button").addEventListener("click", function () {
+    window.location.href = "./index0.html";
+  });
       </script>
 </body>
 </html>

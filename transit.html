@@ -5,19 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-/* Navbar section */
-.navbar {
+     <style>
+        .navbar {
     background: rgb(74, 17, 17);
     background-attachment: fixed;
     height: 80px;
@@ -222,157 +211,81 @@ body {
     }
  }
 
- /* track */
-.track{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
 
-.track__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+ .transit__container{
+    padding-left: 10px ;
+    padding-top: 10px;
+ }
 
-.track__container h1{
+ .first h4{
+    font-size: 13px;
+    font-weight: bold;
+ }
+ .first p{
+    font-size: 35px;
+ }
+
+ .second h4{
+    font-size: 13px;
+    font-weight: bold;
+ }
+
+ .second p{
+    font-size: 25px;
+    font-weight: 200;
+ }
+  .second p i{
+    color: #fff;
+    margin-left: 7px;
+    background: rgb(74, 17, 17);
+    width: fit-content;
+    border-radius: 100%;
+    padding: 5px;
     font-size: 20px;
-    margin-bottom: 20px;
-}
+  }
 
-.links{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-}
-
-.link{
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 15px;
-    text-align: center;
-    color: #fff;
-    background-color:  rgb(74, 17, 17);
-    border-radius: 5px;
-    font-size: 10px;
-}
-
-.link:hover{
-    background-color: #c0c2c6;
-    color:  rgb(74, 17, 17);
-    transition: 0.3s ease;
-}
-
-.link1{
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #fff;
-    background-color:  rgb(171, 135, 34);
-    border-radius: 5px;
-    font-size: 10px;
-}
-
-.link1:hover{
-    background-color: #c0c2c6;
-    color: rgb(171, 135, 34);
-    transition: 0.3s ease;
-}
-
-
-
-form{
-  padding-top: 20px;
- 
-}
-
-form label{
-    font-weight: 500;
-}
-
-form input{
-    width: 350px;
-    height: 50px;
-    background-color: #c0c2c6;
-    border: none;
-    margin-bottom: 20px;
-}
-
-.track-button{
-     width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 25px;
-    text-align: center;
-    color: #fff;
-    background-color:  rgb(74, 17, 17);
-    border-radius: 5px;
-    font-size: 14px;
-}
-.track-button:hover{
-    background-color: #c0c2c6;
-    color:  rgb(74, 17, 17);
-    transition: 0.3s ease;
-}
-
-.track-image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.track-image img{
-    width: 250px;
-}
-
-.track-image p{
-    font-size: 14px;
-    font-style: italic;
+ .third h4{
+    font-size: 13px;
     font-weight: bold;
+ }
+
+.transit__items{
+    margin-top: 15px;
+     border-left: 3px solid brown
 }
 
-.footer__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  rgb(178, 152, 80);
+.transit__items ul{
+    line-height: 55px;
+    
 }
 
-.footer__content{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    text-align: center;
-    padding: 20px;
-}
 
-.para p{
-    font-style: italic;
+.transit__items ul li{
+    list-style: none;
+    font-size: 13px;
     font-weight: bold;
+
 }
 
-
-@media screen and (max-width: 480px){
-    html{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
+.transit__items ul li:hover{
+    width: 200px;
+    background-color: #ddd;
+    border-radius: 50px;
+    padding-left: 10px;
+    transition: 0.3s ease;
 }
-    </style>
+.transit__items .long:hover{
+    width: 400px;
+}
+.pitem {
+    line-height: 5px;
+    padding-left: 30px;
+}
+
+.pitem .slant{
+    font-style: italic;
+}
+     </style>
 </head>
 <body>
       <nav class="navbar">
@@ -392,7 +305,7 @@ form input{
                 </li>
                 
                  <li class="navbar__item">
-                    <a href="#track" class="navbar__links">TRACKING</a>
+                    <a href="./index2.html" class="navbar__links">TRACKING</a>
                 </li>
                  <li class="navbar__btn">
                     <a href="./index.html" class="button">LOGIN</a>
@@ -401,52 +314,46 @@ form input{
         </div>
     </nav>
 
-     <!-- Track section -->
-      <div class="track">
-       
-        <div class="track__container  col-lg-12 col-md-12 " id="track">
-             <h1>Track your Shipments</h1>
-             <div class="links">
-                <a href="/" class="link">Tracking number</a>
-                <a href="/" class="link1">Obtain proof of Delivery</a>
-             </div>
-
-             <form action="/">
-                <label for="">Tracking Number</label><br>
-                <input type="text" name="text">
-             </form>
-
-             <a href="./transit.html" class="track-button">Track</a>
-
-             <div class="track-image ">
-                <h1>Take Control of your Delivereies</h1>
-                <img src="images/pic3.jpg" alt="">
-                <h4>Tap into more Convenience</h4>
-                <p>Move smarter, deliver faster, and stay in control<br>
-                with logistics designed for your rythm</p>
-             </div>
-            
-        </div>
-      </div>
-
-      <footer class="footer__container col-lg-12 col-md-12">
-            <div class="footer__content row col-lg-12 col-md-12">
-                <div class="col-lg-3">
-                    <p><span>2025</span>ATLANTICEXPRESS</p>
-                </div>
-                <div class=" para col-lg-3">
-                    <p>
-                        AE
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
+    <div class="transit__container">
+        <div class="transit col-lg-12 col-md-12">
+            <div class="first">
+                <h4>
+                    SCHEDULED DELIVERY DATE
+                </h4>
+                <p>
+                    Pending
+                </p>
             </div>
-      </footer>
-      <script src="https://kit.fontawesome.com/af5051bfc9.js" crossorigin="anonymous"></script>
+
+            <div class="second">
+                <h4>DELIVERY STATUS</h4>
+                <p>In Transit<i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+
+
+            <div class="third">
+                <h4>TRACKING ID</h4>
+                <p>56890783976255373837 <i class="fa-solid fa-pencil"></i><i class="fa-regular fa-star"></i></p>
+
+            </div>
+
+            <div class="transit__items">
+                <ul>
+                    <li>FROM</li>
+                    <li class="long ">PACKAGE RECIEVED BY ATLANTIC EXPRESS</li>
+                    <li>IN TRANSIT</li>
+                    <li>OUT FOR DELIVERY</li>
+                    <li>TO</li>
+                </ul>
+                <div class="pitem">
+                        <p class="slant">Schedule Delivery Date</p>
+                    <p>Pending</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script src="https://kit.fontawesome.com/af5051bfc9.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/af5051bfc9.js" crossorigin="anonymous"></script>
       <script>
         const menu = document.querySelector('#mobile-menu');
         const menulinks = document.querySelector('.navbar__menu');
@@ -455,10 +362,6 @@ form input{
         menu.classList.toggle('is-active');
         menulinks.classList.toggle('active');
 });
-
-document.querySelector(".track-button").addEventListener("click", function () {
-    window.location.href = "./transit.html";
-  });
       </script>
 </body>
 </html>
