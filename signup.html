@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <style>
-        *{
+     <style>
+            *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -222,157 +222,69 @@ body {
     }
  }
 
- /* track */
-.track{
+
+ /* Login */
+.login{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
 }
 
-.track__container{
-    display: flex;
-    flex-direction: column;
+.login__container{
+     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.track__container h1{
-    font-size: 20px;
-    margin-bottom: 20px;
+.login__container h1{
+    font-size: 24px;
 }
 
-.links{
-    display: flex;
+.personal{
+    margin-top: 10px;
+    line-height: 45px;
+}
+
+.form{
+    display:flex ;
+    flex-direction: column;
     justify-content: center;
-    gap: 100px;
+    padding-top: 15px;
 }
 
-.link{
+.form input{
+    margin-bottom: 25px;
+    height: 40px;
+    width: 300px ;
+}
+
+.form input:hover{
+    border: 3px solid rgb(74, 74, 217);
+}
+
+.login__button{
+    background: rgb(74, 17, 17);
     width: fit-content;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 15px;
-    text-align: center;
-    color: #fff;
-    background-color:  rgb(74, 17, 17);
-    border-radius: 5px;
-    font-size: 10px;
-}
-
-.link:hover{
-    background-color: #c0c2c6;
-    color:  rgb(74, 17, 17);
-    transition: 0.3s ease;
-}
-
-.link1{
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #fff;
-    background-color:  rgb(171, 135, 34);
-    border-radius: 5px;
-    font-size: 10px;
-}
-
-.link1:hover{
-    background-color: #c0c2c6;
-    color: rgb(171, 135, 34);
-    transition: 0.3s ease;
-}
-
-
-
-form{
-  padding-top: 20px;
- 
-}
-
-form label{
-    font-weight: 500;
-}
-
-form input{
-    width: 350px;
-    height: 50px;
-    background-color: #c0c2c6;
-    border: none;
+    padding: 13px 0px;
+    padding-left: 150px ;
+    padding-right: 150px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.track-button{
-     width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 25px;
-    text-align: center;
+.login__button a{
     color: #fff;
-    background-color:  rgb(74, 17, 17);
-    border-radius: 5px;
-    font-size: 14px;
-}
-.track-button:hover{
-    background-color: #c0c2c6;
-    color:  rgb(74, 17, 17);
-    transition: 0.3s ease;
+    text-decoration: none;
 }
 
-.track-image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.bottom{
+    padding-top: 15px;
 }
-
-.track-image img{
-    width: 250px;
-}
-
-.track-image p{
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.footer__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  rgb(178, 152, 80);
-}
-
-.footer__content{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    text-align: center;
-    padding: 20px;
-}
-
-.para p{
-    font-style: italic;
-    font-weight: bold;
-}
-
-
-@media screen and (max-width: 480px){
-    html{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-}
-    </style>
+     </style>
 </head>
 <body>
       <nav class="navbar">
@@ -392,60 +304,40 @@ form input{
                 </li>
                 
                  <li class="navbar__item">
-                    <a href="#track" class="navbar__links">TRACKING</a>
+                    <a href="./index2.html" class="navbar__links">TRACKING</a>
                 </li>
                  <li class="navbar__btn">
-                    <a href="./login.html" class="button">LOGIN</a>
+                    <a href="/" class="button">LOGIN</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-     <!-- Track section -->
-      <div class="track">
-       
-        <div class="track__container  col-lg-12 col-md-12 " id="track">
-             <h1>Track your Shipments</h1>
-             <div class="links">
-                <a href="/" class="link">Tracking number</a>
-                <a href="/" class="link1">Obtain proof of Delivery</a>
-             </div>
+      <div class="login container-fluid ">
+        <div class="login__container row col-lg-7 col-md-12">
+            <h1 class="col-lg-7 col-md-12">Sign Up
+            </h1>
 
-             <form action="/">
-                <label for="">Tracking Number</label><br>
-                <input type="text" name="text">
-             </form>
-
-             <a href="/" class="track-button">Track</a>
-
-             <div class="track-image ">
-                <h1>Take Control of your Delivereies</h1>
-                <img src="images/pic3.jpg" alt="">
-                <h4>Tap into more Convenience</h4>
-                <p>Move smarter, deliver faster, and stay in control<br>
-                with logistics designed for your rythm</p>
-             </div>
-            
+           
+             <div class="form   col-lg-7 col-md-12" >
+              <form action="" class="username col-lg-7 col-md-12" >
+               
+                <input type="email" placeholder="Email" class=" col-lg-5 col-md-12">
+            </form>
+            <form action="" class="password col-lg-7 col-md-12">
+                
+                <input type="password" placeholder="Password" class=" col-lg-5 col-md-12">
+            </form>
+            <button class="login__button "><a href="#">SIgn Up</a></button>
+             
+             <a href="#" class="bottom  col-lg-7 col-md-12">Set up online access</a>
+             <a href="./login.html" class="bottom  col-lg-7 col-md-12">Have an account? Log in</a>
         </div>
-      </div>
+        </div>
 
-      <footer class="footer__container col-lg-12 col-md-12">
-            <div class="footer__content row col-lg-12 col-md-12">
-                <div class="col-lg-3">
-                    <p><span>2025</span>ATLANTICEXPRESS</p>
-                </div>
-                <div class=" para col-lg-3">
-                    <p>
-                        AE
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-            </div>
-      </footer>
+       
+    </div>
+
       <script src="https://kit.fontawesome.com/af5051bfc9.js" crossorigin="anonymous"></script>
       <script>
         const menu = document.querySelector('#mobile-menu');
