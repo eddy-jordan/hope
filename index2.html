@@ -411,12 +411,11 @@ form input{
                 <a href="/" class="link1">Obtain proof of Delivery</a>
              </div>
 
-             <form action="/">
-                <label for="">Tracking Number</label><br>
-                <input type="text" name="text">
+             <form method="get" action="http://localhost:8000/track/">
+                <label for="tracking_id">Tracking Number</label><br>
+                <input type="text" id="tracking_id" name="tracking_id">
+                <button type="submit" class="track-button">Track</button>
              </form>
-
-             <a href="./transit.html" class="track-button">Track</a>
 
              <div class="track-image ">
                 <h1>Take Control of your Delivereies</h1>
@@ -456,9 +455,7 @@ form input{
         menulinks.classList.toggle('active');
 });
 
-document.querySelector(".track-button").addEventListener("click", function () {
-    window.location.href = "./transit.html";
-  });
+// Tracking now submits directly to backend; no client-side redirect needed
       </script>
 </body>
 </html>

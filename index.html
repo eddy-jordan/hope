@@ -174,9 +174,9 @@ body {
                 
                 <input type="password" placeholder="Password" class=" col-lg-5 col-md-12">
             </form>
-            <button class="login__button "><a href="./index0.html">Log in</a></button>
+            <button class="login__button "><a href="http://localhost:8000/login/">Log in</a></button>
              <a href="#" class="bottom  col-lg-7 col-md-12">Forgot your username or password?</a>
-             <a href="./signup.html" class="bottom  col-lg-7 col-md-12">Open a new account</a>
+             <a href="http://localhost:8000/signup/" class="bottom  col-lg-7 col-md-12">Open a new account</a>
         </div>
         </div>
 
@@ -193,9 +193,7 @@ body {
         menulinks.classList.toggle('active');
 });
 
- document.querySelector(".login__button").addEventListener("click", function () {
-    window.location.href = "./index0.html";
-  });
+// Login now navigates to backend auth page directly
       </script>
 </body>
 </html>
